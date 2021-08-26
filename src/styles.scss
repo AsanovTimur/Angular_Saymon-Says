@@ -1,0 +1,98 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  padding-top: 150px;
+}
+
+h2 {
+  margin: 10px 0 35px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: aquamarine;
+}
+
+.game-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 2px;
+  border: 1px white solid;
+  cursor: pointer;
+}
+
+.scoreStart {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: black;
+  right: 50%;
+  transform: translate(50%, -50%);
+  .start-btn {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    border: none;
+    background: none;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-size: 35px;
+    text-transform: uppercase;
+  }
+  p {
+    margin: 10px;
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: center;
+  }
+}
+
+.red {
+  border-top-left-radius: 200px;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+.red:active, .red.active{
+  background-color: #f67a7a;
+}
+
+
+.green {
+  border-top-right-radius: 200px;
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+.green:active, .green.active{
+  background-color: #7bf67b;
+}
+
+.blue {
+  border-bottom-left-radius: 200px;
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+.blue:active, .blue.active{
+  background-color: #7b7bf6;
+}
+
+.yellow {
+  border-bottom-right-radius: 200px;
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+}
+.yellow:active, .yellow.active{
+  background-color: #f1f1ed;
+}
